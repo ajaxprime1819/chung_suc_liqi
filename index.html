@@ -99,10 +99,9 @@
   
   <div class="service-card">
     
-    <!-- 1. HÌNH ẢNH DỊCH VỤ -->
+    <!-- 1. HÌNH ẢNH DỊCH VỤ (Đã cập nhật theo link của bạn) -->
     <div class="service-img-container">
-      <!-- Đường dẫn ảnh của bạn -->
-      <img src="https://i.ibb.co/2aOboQmpgRnRFgG3vyIqlyrTLxFdt4tFrrMVV4rY.jpg" alt="Sự kiện Rương Trang Phục SS" class="service-img">
+      <img src="https://i.ibb.co/qYkC3Km8/image.jpg" alt="Dịch vụ Cày Rương" class="service-img">
     </div>
 
     <div class="p-4">
@@ -111,7 +110,7 @@
       <div class="text-center mb-4">
         <h4 class="fw-bold text-uppercase text-dark mb-2">DỊCH VỤ SỰ KIỆN - RƯƠNG TRANG PHỤC SS</h4>
         
-        <!-- NOTE GIÁ THEO YÊU CẦU -->
+        <!-- NOTE GIÁ -->
         <div class="mt-2">
           <span class="note-badge">
             <i class="fa-solid fa-fire"></i> Note: 1 rương 25k | Full 3 rương 40k
@@ -176,15 +175,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-  // CẤU HÌNH ĐƯỜNG LINK TRANG WEB BẠN MUỐN CHUYỂN TỚI SAU KHÍ TẠO ĐƠN SONG
-  const LINK_MOI = "https://google.com"; // Thay đường link web/lịch sử đơn hàng của bạn vào đây
+  // Link chuyển hướng sau khi bấm nút Tạo Đơn Hàng
+  const LINK_MOI = "https://google.com"; 
 
   document.getElementById('packageOrderForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Ngăn trang tự tải lại
-    
+    e.preventDefault();
     alert("Tạo đơn hàng thành công! Đang chuyển hướng...");
-    
-    // Tự động chuyển tới liên kết bạn chọn
     window.location.href = LINK_MOI;
   });
 </script>
