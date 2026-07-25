@@ -28,14 +28,14 @@
       z-index: 9999;
     }
 
-    /* Style chung cho ảnh cuối trang */
-    .banner-footer {
+    /* Style chung cho ảnh đầu trang và cuối trang */
+    .banner-header-footer {
       width: 100%;
       text-align: center;
-      margin: 20px 0;
+      margin: 15px 0;
     }
 
-    .banner-footer img {
+    .banner-header-footer img {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
@@ -49,7 +49,7 @@
       border: 1px solid #eef2f7;
       overflow: hidden;
       max-width: 650px;
-      margin: 30px auto;
+      margin: 20px auto;
       position: relative;
       z-index: 10;
     }
@@ -132,25 +132,25 @@
 
 <div class="container px-3">
 
+  <!-- 1. ẢNH ĐẦU TRANG -->
+  <div class="banner-header-footer">
+    <img src="https://i.ibb.co/TDcypns8/image.jpg" alt="Banner Đầu Trang">
+  </div>
+
   <div class="service-card">
     
     <!-- HÌNH ẢNH SỰ KIỆN CHÍNH -->
     <div class="service-img-container">
-      <img src="https://i.ibb.co/2aOboQmpgYU52l4FKNFhi45cg2fs7Ko1XLJU16uW.jpg" alt="Nhận Full Sự Kiện Chung Sức Bắn Bi" class="service-img">
+      <img src="https://i.ibb.co/2aOboQmpgYU52l4FKNFhi45cg2fs7Ko1XLJU16uW.jpg" alt="Sự Kiện Chung Sức Bắn Bi" class="service-img">
     </div>
 
     <div class="p-4">
       
-      <!-- Tiêu đề & Note Bảng Giá -->
+      <!-- NOTE GIÁ (ĐÃ XÓA CHỮ TIÊU ĐỀ TRÊN NÓ) -->
       <div class="text-center mb-4">
-        <h4 class="fw-bold text-uppercase text-dark mb-2">NHẬN FULL SỰ KIỆN - CHUNG SỨC BẮN BI</h4>
-        
-        <!-- NOTE GIÁ -->
-        <div class="mt-2">
-          <span class="note-badge">
-            <i class="fa-solid fa-fire"></i> Note: 1 rương 25k | Full 3 rương 40k
-          </span>
-        </div>
+        <span class="note-badge">
+          <i class="fa-solid fa-fire"></i> Note: 1 rương 25k | Full 3 rương 40k
+        </span>
       </div>
 
       <!-- FORM TẠO ĐƠN HÀNG -->
@@ -180,8 +180,8 @@
     </div>
   </div>
 
-  <!-- ẢNH CUỐI TRANG -->
-  <div class="banner-footer">
+  <!-- 2. ẢNH CUỐI TRANG -->
+  <div class="banner-header-footer">
     <img src="https://i.ibb.co/qYkC3Km8/image.jpg" alt="Banner Cuối Trang">
   </div>
 
