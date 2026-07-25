@@ -29,7 +29,7 @@
     /* KHUNG CHỨA ẢNH - NỀN TRẮNG */
     .service-img-container {
       width: 100%;
-      background-color: #ffffff; /* Đã đổi sang nền trắng */
+      background-color: #ffffff;
       padding: 0;
       display: flex;
       justify-content: center;
@@ -58,15 +58,15 @@
       box-shadow: 0 4px 10px rgba(255, 65, 108, 0.3);
     }
 
-    /* Style cho Input / Select */
-    .form-control, .form-select {
+    /* Style cho Select */
+    .form-select {
       border-color: #dee2e6;
       padding: 0.65rem 0.85rem;
       font-size: 14px;
       border-radius: 8px;
     }
 
-    .form-control:focus, .form-select:focus {
+    .form-select:focus {
       border-color: #0d6efd;
       box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
     }
@@ -126,7 +126,7 @@
       <form id="packageOrderForm">
         
         <!-- Chọn Gói -->
-        <div class="mb-3">
+        <div class="mb-4">
           <label class="form-label fw-bold text-secondary" style="font-size: 14px;">Chọn Gói Cần Thuê</label>
           <select class="form-select" id="selectPackage" required>
             <option value="" selected disabled>-- Bấm để chọn gói dịch vụ --</option>
@@ -135,33 +135,9 @@
           </select>
         </div>
 
-        <!-- Thông Tin Tài Khoản -->
-        <div class="row g-3 mb-3">
-          <div class="col-md-6">
-            <label class="form-label fw-bold text-secondary" style="font-size: 14px;">Tài Khoản Game</label>
-            <div class="input-group">
-              <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
-              <input type="text" class="form-control" placeholder="Tài khoản Garena / Facebook" required>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label fw-bold text-secondary" style="font-size: 14px;">Mật Khẩu</label>
-            <div class="input-group">
-              <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
-              <input type="password" class="form-control" placeholder="Mật khẩu game" required>
-            </div>
-          </div>
-        </div>
-
-        <!-- Ghi chú cho Admin -->
-        <div class="mb-4">
-          <label class="form-label fw-bold text-secondary" style="font-size: 14px;">Ghi Chú Yêu Cầu (Nếu có)</label>
-          <textarea class="form-control" rows="2" placeholder="Ví dụ: Đã có sẵn 1 rương, cày thêm 2 rương nữa..."></textarea>
-        </div>
-
         <!-- NÚT TẠO ĐƠN HÀNG -->
         <div class="text-center">
-          <p class="text-muted small mb-2 fw-semibold">Vui lòng kiểm tra kỹ thông tin trước khi tạo đơn</p>
+          <p class="text-muted small mb-2 fw-semibold">Vui lòng chọn gói dịch vụ trước khi tạo đơn</p>
           <button type="submit" class="btn-create-order shadow-sm">
             <i class="fa-solid fa-cart-shopping"></i>
             <span>Tạo Đơn Hàng</span>
