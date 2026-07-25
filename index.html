@@ -22,29 +22,27 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       border: 1px solid #eef2f7;
       overflow: hidden;
-      max-width: 600px;
+      max-width: 650px;
       margin: 30px auto;
     }
 
-    /* KHUNG CHỨA ẢNH NẰM NGANG & BÉ LẠI */
+    /* KHUNG CHỨA ẢNH - BỌC VỪA VẶN VÀ NỔI BẬT */
     .service-img-container {
       width: 100%;
-      background-color: #1a1a1a; /* Nền tối nhẹ làm nổi bật ảnh ngang */
+      background-color: #121212; /* Nền tối sang trọng */
       padding: 12px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    /* ẢNH HIỂN THỊ ĐẦY ĐỦ CẢ KHUNG (NOT CẮT GÓC) */
+    /* HIỂN THỊ ĐẦY ĐỦ 100% BỀ NGANG CỦA ẢNH GỐC */
     .service-img {
-      max-width: 85%;      /* Thu nhỏ kích thước ngang của ảnh */
-      max-height: 220px;   /* Giới hạn chiều cao cho ảnh bé gọn */
-      width: auto;
-      height: auto;
-      object-fit: contain; /* Giữ nguyên tỉ lệ, thấy trọn vẹn toàn bộ ảnh */
+      width: 100%;          /* Mở rộng hết chiều ngang khung */
+      max-width: 100%;     
+      height: auto;        /* Tự co giãn chiều cao theo đúng tỉ lệ ảnh gốc */
+      display: block;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
 
     /* Tag Note Giá Nổi Bật */
@@ -106,9 +104,9 @@
   
   <div class="service-card">
     
-    <!-- 1. HÌNH ẢNH DỊCH VỤ (BÉ & NGANG, THẤY HẾT ẢNH) -->
+    <!-- 1. HÌNH ẢNH HIỂN THỊ TRỌN VẸN CẢ 5 TƯỚNG (KHÔNG BỊ XÉN HỦY) -->
     <div class="service-img-container">
-      <img src="https://i.ibb.co/qYkC3Km8/image.jpg" alt="Dịch vụ Cày Rương" class="service-img">
+      <img src="https://i.ibb.co/2aOboQmpgRnRFgG3vyIqlyrTLxFdt4tFrrMVV4rY.jpg" alt="Dịch vụ Cày Rương Trang Phục SS" class="service-img">
     </div>
 
     <div class="p-4">
