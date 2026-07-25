@@ -22,22 +22,29 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       border: 1px solid #eef2f7;
       overflow: hidden;
-      max-width: 650px;
+      max-width: 600px;
       margin: 30px auto;
     }
 
-    /* Hiển thị ảnh dịch vụ */
+    /* KHUNG CHỨA ẢNH NẰM NGANG & BÉ LẠI */
     .service-img-container {
-      position: relative;
       width: 100%;
-      background-color: #000;
+      background-color: #1a1a1a; /* Nền tối nhẹ làm nổi bật ảnh ngang */
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
+    /* ẢNH HIỂN THỊ ĐẦY ĐỦ CẢ KHUNG (NOT CẮT GÓC) */
     .service-img {
-      width: 100%;
+      max-width: 85%;      /* Thu nhỏ kích thước ngang của ảnh */
+      max-height: 220px;   /* Giới hạn chiều cao cho ảnh bé gọn */
+      width: auto;
       height: auto;
-      display: block;
-      object-fit: cover;
+      object-fit: contain; /* Giữ nguyên tỉ lệ, thấy trọn vẹn toàn bộ ảnh */
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
 
     /* Tag Note Giá Nổi Bật */
@@ -99,7 +106,7 @@
   
   <div class="service-card">
     
-    <!-- 1. HÌNH ẢNH DỊCH VỤ (Đã cập nhật theo link của bạn) -->
+    <!-- 1. HÌNH ẢNH DỊCH VỤ (BÉ & NGANG, THẤY HẾT ẢNH) -->
     <div class="service-img-container">
       <img src="https://i.ibb.co/qYkC3Km8/image.jpg" alt="Dịch vụ Cày Rương" class="service-img">
     </div>
