@@ -15,6 +15,19 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    /* Style chung cho ảnh đầu trang và cuối trang */
+    .banner-header-footer {
+      width: 100%;
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .banner-header-footer img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
     /* Card Dịch Vụ */
     .service-card {
       background: #ffffff;
@@ -23,7 +36,7 @@
       border: 1px solid #eef2f7;
       overflow: hidden;
       max-width: 650px;
-      margin: 30px auto;
+      margin: 20px auto;
     }
 
     /* KHUNG CHỨA ẢNH - NỀN TRẮNG */
@@ -36,7 +49,7 @@
       align-items: center;
     }
 
-    /* HIỂN THỊ TRỌN VẸN VÀ RÕ NÉT CẢ BỨC ẢNH */
+    /* HIỂN THỊ TRỌN VẸN BỨC ẢNH SỰ KIỆN */
     .service-img {
       width: 100%;
       max-width: 100%;
@@ -101,9 +114,14 @@
 
 <div class="container px-3">
   
+  <!-- 1. ẢNH Ở ĐẦU TRANG -->
+  <div class="banner-header-footer">
+    <img src="https://i.ibb.co/TDcypns8/image.jpg" alt="Banner Đầu Trang">
+  </div>
+
   <div class="service-card">
     
-    <!-- HÌNH ẢNH SỰ KIỆN TRÊN NỀN TRẮNG -->
+    <!-- HÌNH ẢNH SỰ KIỆN CHÍNH -->
     <div class="service-img-container">
       <img src="https://i.ibb.co/2aOboQmpgYU52l4FKNFhi45cg2fs7Ko1XLJU16uW.jpg" alt="Nhận Full Sự Kiện Chung Sức Bắn Bi" class="service-img">
     </div>
@@ -147,6 +165,11 @@
       </form>
 
     </div>
+  </div>
+
+  <!-- 2. ẢNH Ở CUỐI TRANG -->
+  <div class="banner-header-footer">
+    <img src="https://i.ibb.co/TDcypns8/image.jpg" alt="Banner Cuối Trang">
   </div>
 
 </div>
